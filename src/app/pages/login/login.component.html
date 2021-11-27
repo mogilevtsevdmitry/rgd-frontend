@@ -1,0 +1,7 @@
+<form (submit)="onSubmit()" class="d-flex" [formGroup]="formGroup" novalidate>
+  <input type="email" class="form-control mx-1" placeholder="Email"
+         formControlName="emailControl" name="emailControl">
+  <input type="password" class="form-control mx-1" placeholder="Пароль" formControlName="passwordControl"
+         name="passwordControl">
+  <button type="button" class="btn btn-primary" [disabled]="formGroup.invalid">Войти</button>
+</form>
